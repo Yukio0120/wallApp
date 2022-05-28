@@ -6,13 +6,20 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/img_wallpaper"
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_wallpaper"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_above="@+id/set_up"-->
+    <!--        android:contentDescription="@string/app_name"-->
+    <!--        android:scaleType="centerCrop" />-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/set_up"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerCrop" />
+        android:foregroundGravity="center" />
 
     <Button
         android:id="@+id/set_up"
@@ -21,5 +28,4 @@
         android:layout_alignParentBottom="true"
         android:text="@string/app_name"
         android:textAllCaps="false" />
-
 </RelativeLayout>
